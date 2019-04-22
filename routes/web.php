@@ -16,9 +16,25 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('home');
+    return view('home')->name('home');
 });
 
 Route::get('/about', function () {
     return view('about');
 })->name('about');
+
+Route::get('/collection', function () {
+    return view('about');
+})->name('collection');
+
+Route::get('/shops', function () {
+    return view('about');
+})->name('shops');
+
+Route::get('/contacts', function () {
+    return view('about');
+})->name('contacts');
+
+Route::get('/celebrities', function () {
+    return view('about');
+})->name('celebrities');

@@ -21,7 +21,7 @@
 
       <nav class="uk-navbar-container" uk-navbar>
           <div class="uk-navbar-left">
-              <a class="uk-navbar-item uk-logo" href="{{url('/')}}"><img class="header-logo" src="{{asset('storage/front/ameete_logo_black.svg')}}"  alt="ameete"></a>
+              <a class="uk-navbar-item uk-logo" href="{{route('home')}}"><img class="header-logo" src="{{asset('storage/front/ameete_logo_black.svg')}}"  alt="ameete"></a>
           </div>
           <div class="uk-navbar-right">
             <div class="uk-navbar-item">
@@ -33,11 +33,11 @@
     <div class="uk-offcanvas-bar">
        <button class="uk-offcanvas-close" type="button" uk-close></button>
         <ul class="uk-nav uk-nav-default menuList">
-            <li><a href="#">COLLECTION</a></li>
-            <li><a href="#">WHERE TO BUY</a></li>
-            <li><a href="#">CONTACTS</a></li>
+            <li><a href="{{route('collection')}}">COLLECTION</a></li>
+            <li><a href="{{route('shops')}}">WHERE TO BUY</a></li>
+            <li><a href="{{route('contacts')}}">CONTACTS</a></li>
             <li><a href="{{route('about')}}">ABOUT</a></li>
-            <li><a href="{{route('about')}}">CELEBRITIES</a></li>
+            <li><a href="{{route('celebrities')}}">CELEBRITIES</a></li>
             <li><a href="https://www.instagram.com/ameeteparis/" target="_blank">FOLLOW US</a></li>
 
         </ul>
