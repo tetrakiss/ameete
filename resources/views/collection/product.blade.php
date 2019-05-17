@@ -1,6 +1,11 @@
 @extends('layouts.main')
 @section('content')
 <div class="content-firstPage">
+  <ul class="uk-breadcrumb">
+    <li><a href="{{route('home')}}">HOME</a></li>
+    <li><a href="{{route('collection')}}">COLLECTION</a></li>
+     <li><span>{{$product['id']}}</span></li>
+   </ul>
   <div class=" uk-child-width-1-2@s " uk-grid>
     <div class="product-image">
       <div class="product-main-image">
@@ -20,7 +25,7 @@
     </div>
     <div class="product-info uk-text-left">
       <h3 class="product-name">leather pump</h3>
-      <p class="product-style">style  17-555-49-17</p>
+      <p class="product-style">style  {{$product['id']}}</p>
       <p class="product-color">color <span class="product-color-vaue">black</span></p>
       <p class="product-description">SHARP PUMPS IN PATENT CALFSKIN WITH STILETTO HEEL, POINTED TAPERED TOE AND ROUNDED FRONT LINE HIGH ON THE FOOT</p>
 
@@ -37,7 +42,7 @@
 
 
 
-      <p class="product-buy-button"><button class="uk-button uk-button-secondary">where to buy</button></p>
+      <p class="product-buy-button"><a href="{{route('shops')}}" class="uk-button uk-button-secondary">where to buy</a></p>
     </div>
   </div>
 
