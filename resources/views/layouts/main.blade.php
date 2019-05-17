@@ -58,7 +58,7 @@
         <div class="uk-padding-small uk-text-left">FOLLOW US</div>
     </div>
     <div class="uk-width-1-2 border-top-bottom">
-        <div class="uk-padding-small uk-text-right"><img width="" height="20" alt="ameete instagram" uk-img="data-src:{{asset('storage/front/instagram.svg')}}" uk-svg></div>
+        <div class="uk-padding-small uk-text-right"><a href="https://www.instagram.com/ameeteparis/" target="_blank"><img width="" height="20" alt="ameete instagram" uk-img="data-src:{{asset('storage/front/instagram.svg')}}" uk-svg></a></div>
     </div>
 
 

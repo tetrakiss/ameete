@@ -24,8 +24,10 @@ Route::get('/about', function () {
 })->name('about');
 
 Route::get('/collection', function () {
-    return view('about');
+    return view('collection.index');
 })->name('collection');
+
+Route::get('/collection/product/{id}', 'CollectionController@productShow')->name('collection.product.show');
 
 Route::get('/shops', function () {
     return view('about');
